@@ -27,7 +27,7 @@ requirements:
     - castepinput ==0.1.4
     - castepxbin >=0.2.0,<0.3.0
     - click
-    - deepdiff<=3.3.0
+    - deepdiff <=3.3.0
     - matplotlib-base
     - python >=3.7
     - seekpath >=1.9.3,<1.10.0
