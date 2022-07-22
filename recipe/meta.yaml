@@ -1,5 +1,5 @@
 {% set name = "aiida-castep" %}
-{% set version = "2.0.1" %}
+{% set version = "1.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aiida-castep-{{ version }}.tar.gz
-  sha256: 2e64174f48a2e6b41d46480e21713a15de0e4f429699d75c0ff420dca008aebc
+  sha256: 8a1f565036e3d52f2e138dd9ef877bdf39aa49c68cf47ec84d61b5b87068df77
 
 build:
   entry_points:
@@ -19,17 +19,17 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - reentry
   run:
-    - aiida-core >=2.0,<3.0.0
+    - aiida-core ~=1.6
     - ase >=3.0,<4.0
-    - castepinput ==0.1.6
+    - castepinput ==0.1.4
     - castepxbin >=0.2.0,<0.3.0
     - click
-    - deepdiff
+    - deepdiff<=3.3.0
     - matplotlib-base
-    - python >=3.6
+    - python >=3.7
     - seekpath >=1.9.3,<1.10.0
     - six >=1.0,<2.0
 
